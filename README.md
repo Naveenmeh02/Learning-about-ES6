@@ -30,5 +30,38 @@ add()
 #
 ## Key-features
 It's most commonly used Key features are:
-- [let & conts](#let-const-varialbles)
-- [Arrow funtions](#arrow-functions)
+#
+**[let & conts](#let-const-varialbles)**
+    **Defining these variables**
+### `let`: 
+> let variables exist in a block scope
+```javascript
+    let a = 1;
+```
+>>let variables cannot be redefined, but can be reassigned:
+```javascript
+let variableName = "other value"  
+    //-->SyntaxError
+variableName = "other value"
+```
+
+### `const`: 
+> Constant variables exist in a block scope
+```javascript 
+    const pie = 3.14;
+```
+> You can change, add value to a constant array  but you cannot reassign or redefine it:
+```javascript
+const arrayName = [1,2,3,4]
+arrayName.push(5) 
+    //-->[1,2,3,4,5]
+const arrayName = [9,8,7,6] 
+    //-->SyntaxError
+```
+
+
+#
+**[Arrow funtions](#arrow-functions)**
+
+# 
+## React-use-cases
