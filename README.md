@@ -1,4 +1,4 @@
-# Understanding-ES6
+# Understanding-ES6 by *`-S S Naveen-`*
 This repository contains a small cheat sheet of essential concepts of JavaScript's ES6 features.
 - This is for the small session I conducted on 5/07/2024 
 # 
@@ -31,14 +31,14 @@ add()
 ## Key-features
 It's most commonly used Key features are:
 #
-**[let & conts](#let-const-varialbles)**
+## `let` and `const` variables
     **Defining these variables**
 ### `let`: 
 > let variables exist in a block scope
 ```javascript
-    let a = 1;
+let a = 1;
 ```
->>let variables cannot be redefined, but can be reassigned:
+> let variables cannot be redefined, but can be reassigned:
 ```javascript
 let variableName = "other value"  
     //-->SyntaxError
@@ -48,7 +48,7 @@ variableName = "other value"
 ### `const`: 
 > Constant variables exist in a block scope
 ```javascript 
-    const pie = 3.14;
+const pie = 3.14;
 ```
 > You can change, add value to a constant array  but you cannot reassign or redefine it:
 ```javascript
@@ -61,7 +61,69 @@ const arrayName = [9,8,7,6]
 
 
 #
-**[Arrow funtions](#arrow-functions)**
+## Arrow funtion
+> Arrow function is a new way of defining a function for cleaner code and is commonly used in callback function
 
-# 
+```javascript
+//regular function 
+function addNum(a,b){
+    let a = 1;
+    let b = 2;
+    sum = a + b;//sum = 3
+    console.log(sum);
+}
+//arrow funtion
+let functionName = (a,b) => a+b;
+```
+Arrow function is commonly used in callback:
+```javascript
+//regular function 
+function addNum(a,b){
+    let a = 1;
+    let b = 2;
+    sum = a + b;//sum = 3
+    console.log(sum);
+}
+//arrow funtion
+let functionName = (a,b) => a+b;
+```
+#
+## Objects
+> Objects in Js collection of key-value where the key are the strings and values can be datatypes 
+```javascript
+//this is a common way to create an object
+const person = {
+    name: "naveen",
+    gender:"male";
+}
+console.log(person.name + "is a sigma" + person.gender);
+// OUTPUT: naveen is a sigma male
+```
+There are two ways to access an object 
+- Dot notation 
+- Bracket notation 
+
+``` javascript
+const person = {
+    name: "naveen",
+    walk: funtion() {}, //this is called a method
+    talk(){} //this is a cleaner and simpler way to create a method
+};
+    person.talk(); //calling using dot notation
+    person['name'] = "zayn" // calling using bracket notation 
+                            //values can be modified
+```
+#
+## `this` keyword
+> It's a keyword in Js that returns the reference to a current object 
+```javascript
+const person = {
+    name: "naveen",
+    talk(){
+        consol.log(this)
+    }
+};
+
+```
+
 ## React-use-cases
