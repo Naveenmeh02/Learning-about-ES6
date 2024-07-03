@@ -5,12 +5,12 @@ This repository contains a small cheat sheet of essential concepts of JavaScript
 <img src="./ES6-Resources/ES6-presenation-coverPage.png" width="1000px">
 
 # Table  of contents 
-- [Why do we need ES6](#Whys_ES6-needed)
+- [Why do we need ES6](#Whys-ES6-needed)
 - [Key features](#Key-features)
 - [Where do we use these in React](#React-use-cases)
 
-#
-## Whys-ES6-needed
+
+## Why's-ES6-needed?
 - ES6 helps in making the code more concise and readable.
 
 before
