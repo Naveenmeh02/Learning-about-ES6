@@ -1,4 +1,4 @@
-# Understanding-ES6 by *`-S S Naveen-`*
+# Learning-about-ES6 by *`-S S Naveen-`*
 This repository contains a small cheat sheet of essential concepts of JavaScript's ES6 features.
 - This is for the small session I conducted on 5/07/2024 
 # 
