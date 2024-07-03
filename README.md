@@ -6,6 +6,9 @@ This repository contains a small cheat sheet of essential concepts of JavaScript
 
 # Table  of contents 
 - [Why do we need ES6](#Why's_ES6-needed?)
+- [Key features](#Key-features)
+- [let & conts)(#let-const-varialbles)
+- 
 
 
 
@@ -17,3 +20,5 @@ This repository contains a small cheat sheet of essential concepts of JavaScript
 
 
 ## Why's-ES6-needed?
+- ES6 helps in making the code more concise and readable.
+
