@@ -10,7 +10,7 @@ This repository contains a small cheat sheet of essential concepts of JavaScript
 - [Where do we use these in React](#React-use-cases)
 
 
-## Why's-ES6-needed?
+## Whys-ES6-needed
 - ES6 helps in making the code more concise and readable.
 
 before
