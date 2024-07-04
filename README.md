@@ -231,8 +231,34 @@ let age = 20;
 let message = age >= 18 ? 'You are an adult.' : 'You are a minor.';
 console.log(message); // 'You are an adult.'
 ```
+#
+## Modeules 
+> ES6 modules allow for better code organization by importing and exporting functions, objects, or primitives from one module to another.
+### Key concepts 
+- **Exporting**: Making functions, objects, or variables available for use in other modules.
+- **Importing**: Bringing in functions, objects, or variables from other modules to use in the current module.
+```javascript
+//main.js
+export const pi = 3.14;
+```
+```javascript
+//script.js
+import {pi} from "./main.js"
 
-## React-use-cases
+console.log(pi) // 3.14
+```
+### Renaming Imports
+```javascript
+//main.js
+export const add = (a,b) => {
+    sum = a + b;
+}
+//script.js
+import {add as addition} from "./main.js"
+
+console.log(addition(3,4)) // 7
+```
+# React-use-cases
 > Some examples that shows where ES6is used inside React 
 ```jsx 
 import React, { useState } from 'react';
