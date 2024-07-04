@@ -120,7 +120,8 @@ const person = {
     person['name'] = "zayn" // calling using bracket notation 
                             //values can be modified
 ```
-### Object Destructing 
+#
+## Object Destructing 
 > Object destructuring is a convenient way to extract values from objects and assign them to variables
 ```javascript 
 const person = {
@@ -141,7 +142,7 @@ const person = {
 const {name ,gender = "Female"} = person;
 console.log(gender); // Female
 ```
-### Renaming Variables
+- ### Renaming Variables
 ```javascript
 const person = {
   name: 'Alice',
@@ -174,17 +175,7 @@ console.log(first); // 1
 console.log(second); // 2
 console.log(rest); // [3, 4, 5]
 ```
-<!-- this keyword -->
-## `this` keyword
-> It's a keyword in Js that returns the reference to a current object 
-```javascript
-const person = {
-    name: "naveen",
-    talk(){
-        console .log(this)
-    }
-};
-```
+
 <!-- template literals -->
 #
 ## Template Literals 
@@ -217,7 +208,7 @@ let sum = `The sum is ${a+b}` //The sum is 7
 #
 ## Ternary Operators
 > The ternary operator is a shorthand way to write an `if-else` statement in JavaScript. 
-### Basic Syntax 
+- ### Basic Syntax 
 ```javascript
 condition ? expressionIfTrue : expressionIfFalse;
 ```
@@ -242,3 +233,29 @@ console.log(message); // 'You are an adult.'
 ```
 
 ## React-use-cases
+> Some examples that shows where ES6is used inside React 
+```jsx 
+import React, { useState } from 'react';
+
+const Counter = () => {
+  // State using useState hook
+  const [count, setCount] = useState(0);
+
+  // Arrow function for incrementing count
+  const increment = () => setCount(prevCount => prevCount + 1);
+
+  // Arrow function for decrementing count
+  const decrement = () => setCount(prevCount => prevCount - 1);
+
+  return (
+    <div>
+      <h1>{`Count: ${count}`}</h1> {/* Template literals */}
+      <button onClick={increment}>Increment</button> {/* Event handling */}
+      <button onClick={decrement}>Decrement</button> {/* Event handling */}
+    </div>
+  );
+};
+
+export default Counter;
+
+```
