@@ -8,7 +8,7 @@ let secondCard = 7;
 let sum = firstCard + secondCard
 
 const startGame = () => {
-    messageEl.textContent = "Welcome!!"
+    messageEl.textContent = "Welcome!!" 
     renderGame();
 }
 
