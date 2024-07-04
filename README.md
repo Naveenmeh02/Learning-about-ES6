@@ -32,7 +32,7 @@ add()
 It's most commonly used Key features are:
 #
 ## `let` and `const` variables
-    **Defining these variables**
+**Defining these variables**
 ### `let`: 
 > let variables exist in a block scope
 ```javascript
@@ -73,7 +73,10 @@ function addNum(a,b){
     console.log(sum);
 }
 //arrow funtion
-let functionName = (a,b) => a+b;
+let functionName = (a,b) => {
+    let sum = a+b;
+    console.log(sum)
+}
 ```
 Arrow function is commonly used in callback:
 ```javascript
@@ -85,8 +88,12 @@ function addNum(a,b){
     console.log(sum);
 }
 //arrow funtion
-let functionName = (a,b) => a+b;
+let functionName = (a,b) => {
+    let sum = a+b;
+    console.log(sum)
+}
 ```
+<!-- objects -->
 #
 ## Objects
 > Objects in Js collection of key-value where the key are the strings and values can be datatypes 
@@ -113,7 +120,61 @@ const person = {
     person['name'] = "zayn" // calling using bracket notation 
                             //values can be modified
 ```
+### Object Destructing 
+> Object destructuring is a convenient way to extract values from objects and assign them to variables
+```javascript 
+const person = {
+    name: "naveen",
+    gender:"male";
+}
+
+const {name ,gender} = person;
+console.log(name);
+```
+- You can also resassign a new value 
+```javascript
+const person = {
+    name: "naveen",
+    gender:"male";
+}
+
+const {name ,gender = "Female"} = person;
+console.log(gender); // Female
+```
+### Renaming Variables
+```javascript
+const person = {
+  name: 'Alice',
+  age: 25,
+  job: 'Developer'
+};
+
+const { name: personName, age: personAge, job: personJob } = person;
+console.log(personName); // 'Alice'
+```
+<!-- spread operators -->
 #
+## Spread operator
+> The spread operator (...) is a powerful feature introduced in ES6 that allows you to expand elements of an iterable (like an array or object) into individual elements.
+- ### Using Spread with Objects
+```javascript
+const originalObject = { a: 1, b: 2 };
+const copiedObject = { ...originalObject ,c: 3};
+
+console.log(copiedObject); // { a: 1, b: 2,c: 3 }
+```
+
+- ### Combining with Destructuring
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+const [first, second, ...rest] = numbers;
+
+console.log(first); // 1
+console.log(second); // 2
+console.log(rest); // [3, 4, 5]
+```
+<!-- this keyword -->
 ## `this` keyword
 > It's a keyword in Js that returns the reference to a current object 
 ```javascript
@@ -124,9 +185,10 @@ const person = {
     }
 };
 ```
+<!-- template literals -->
 #
 ## Template Literals 
-> This is a quick way to handle a string.They provide a simpler way and more power way to create and manipulate strings 
+> This is a quick way to handle a string. They provide a simpler way and more power way to create and manipulate strings 
 
 ### ES5 Method
 
@@ -155,6 +217,10 @@ let sum = `The sum is ${a+b}` //The sum is 7
 #
 ## Ternary Operators
 > The ternary operator is a shorthand way to write an `if-else` statement in JavaScript. 
+### Basic Syntax 
+```javascript
+condition ? expressionIfTrue : expressionIfFalse;
+```
 ### Regular way to write a conditional statement 
 ```javascript
 let age = 20;
@@ -166,6 +232,12 @@ if (age >= 18) {
   message = 'You are a minor.';
 }
 
+console.log(message); // 'You are an adult.'
+```
+### Using Ternary operator 
+```javascript
+let age = 20;
+let message = age >= 18 ? 'You are an adult.' : 'You are a minor.';
 console.log(message); // 'You are an adult.'
 ```
 
