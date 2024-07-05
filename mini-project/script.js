@@ -6,7 +6,7 @@ const sumEl = document.getElementById("sum-el");
 let firstCard = 5;
 let secondCard = 7;
 let sum = firstCard + secondCard
- 
+
 const startGame = () => {
     messageEl.textContent = "Welcome!!" 
     renderGame();
@@ -21,7 +21,7 @@ const renderGame = () => {
 
 const NewCard = () =>{
     let fresh = 5
-    sum+=fresh
+    sum+=fresh // sum =sum + fresh 
     pickedEl.textContent+= ` Cards picked: ${firstCard} & ${secondCard} & ${fresh}`
     renderGame()
 }
