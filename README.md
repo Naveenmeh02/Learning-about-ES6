@@ -232,7 +232,7 @@ let message = age >= 18 ? 'You are an adult.' : 'You are a minor.';
 console.log(message); // 'You are an adult.'
 ```
 #
-## Modeules 
+## Modules 
 > ES6 modules allow for better code organization by importing and exporting functions, objects, or primitives from one module to another.
 ### Key concepts 
 - **Exporting**: Making functions, objects, or variables available for use in other modules.
