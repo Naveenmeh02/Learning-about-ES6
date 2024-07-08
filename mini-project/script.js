@@ -11,21 +11,18 @@ const startGame = () => {
     messageEl.textContent = "Welcome!!" 
     renderGame();
 }
-
 const renderGame = () => {
     let current = pickedEl.textContent= ` Cards picked: ${firstCard} & ${secondCard}`
     message = sum < 21 ? "Pick another card?" : sum === 21 ? "You've won the BlackJack!" : "You're out TT";
     sumEl.textContent = ` The sum is ${sum}`
     messageEl.textContent = message
 }
-
 const NewCard = () =>{
     let fresh = 5
     sum+=fresh // sum =sum + fresh 
     pickedEl.textContent+= ` Cards picked: ${firstCard} & ${secondCard} & ${fresh}`
     renderGame()
 }
-
 const resetGame = () => {
     messageEl.textContent = "Play another?";
     sumEl.textContent = "";
