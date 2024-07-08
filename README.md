@@ -124,7 +124,7 @@ const person = {
 ## Object Destructing 
 > Object destructuring is a convenient way to extract values from objects and assign them to variables
 ```javascript 
-const person = {
+let person = {
     name: "naveen",
     gender:"male";
 }

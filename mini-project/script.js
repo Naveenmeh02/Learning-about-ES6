@@ -3,12 +3,11 @@ const pickedEl = document.getElementById("cardsPicked");
 const sumEl = document.getElementById("sum-el");
 
 // global variables
-let firstCard = 5;
-let secondCard = 7;
+let firstCard = 6;
+let secondCard = 5;
 let sum = firstCard + secondCard
 
 const startGame = () => {
-    messageEl.textContent = "Welcome!!" 
     renderGame();
 }
 const renderGame = () => {
@@ -18,7 +17,7 @@ const renderGame = () => {
     messageEl.textContent = message
 }
 const NewCard = () =>{
-    let fresh = 5
+    let fresh = 11
     sum+=fresh // sum =sum + fresh 
     pickedEl.textContent+= ` Cards picked: ${firstCard} & ${secondCard} & ${fresh}`
     renderGame()
